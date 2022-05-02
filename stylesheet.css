@@ -3,13 +3,11 @@
 @import '@splidejs/splide/css';
 
 
-:root {
-  --txt-s: 16px;
-  --txt-m: 24px;
-  --txt-l: 32px;
-
-  --h1: 40px;
+h1, h2, h3, p{
+  font-family: 'Roboto', sans-serif;
 }
+
+
 
 /*Removing margins */
 
@@ -17,9 +15,17 @@ body,* {
   margin: 0;
   padding: 0;
 }
+ /*list styling*/
+
+ ul{
+   list-style: none;
+ }
 
 
 /*Link Styling*/
+a{
+  text-decoration: none;
+}
 a:link{
   color: #000;
 }
@@ -64,7 +70,13 @@ a:active{
   margin-right: auto;
 }
 
-/* Nav lists*/
+
+  /* burgermenu */
+  .toggle-btn {
+    display: none;
+  }
+
+
 .logo {
   height: 1.5rem;
 }
@@ -163,6 +175,7 @@ text-decoration: none;
 display: grid;
 grid-template-columns: 1fr 1fr;
 border-bottom: 2px solid black;
+height: 80vh;
 }
 
 .materials_hero section, .materials_hero_image{
@@ -200,12 +213,16 @@ font-size: 8rem;
 }
 
 .materials_hero_image{
-  max-width: 300px;
+  max-width: 450px;
 }
 
 
 .materials_intro_section{
   padding: 2rem;
+}
+
+.materials_description p{
+  font-size: 1.2rem;
 }
 
 /*Slider hell*/
@@ -229,6 +246,25 @@ max-height: 450px;
   max-width: 450px;
 }
 
+
+/*People Grid*/
+.people_grid{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
+.people_wc{
+  padding: 1rem;
+  border: 2px solid black;
+}
+.people_initiatives{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 2PX solid black;
+  padding: 1rem;
+}
 
 
 /*WATER HERO*/

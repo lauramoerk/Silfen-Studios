@@ -8,7 +8,10 @@
     <title>Water Page</title>
   </head>
   <body>
-    <header>
+    <header class="banner">
+            <div class="togglebuttonflex">
+                  <button class="toggle-btn navfont">Menu</button>
+            </div>
       <div class="bluebanner">
         <ul>
           <li>We ship Worldwide</li>
@@ -59,24 +62,24 @@
     </div>
     <div class="sustainability_nav_fields">
         <ul>
-            <li><a href="">MATERIALS</a></li>
-            <li><a href="">PEOPLE</a></li>
-            <li><a href="">SHIPPING</a></li>
-            <li><a href="">WATER</a></li>
+            <li><a href="#m">MATERIALS</a></li>
+            <li><a href="#p">PEOPLE</a></li>
+            <li><a href="#s">SHIPPING</a></li>
+            <li><a href="#w">WATER</a></li>
         </ul>
     </div>
 
 </div>
 
 
-    <div class="materials_hero">
+    <div class="materials_hero" id="m">
         <section>
         <h2 class="materials_h2_faded">I am</h2>
         <h2 class="materials_h2_bold"> recycled  </h2>
         <h2 class="materials_h2_outline"> are you?</h2>
         <h2 class="materials_sub_hero">As a company with great manufacturing activities, we know that we have a responsibility. <br> Our focus is to make as green a production as possible and only using sustainable fabrics for our bags have been a focus of ours. </h2>
     </section>
-    <img class="materials_hero_image" src="./images/sortlogo.png" alt="S logo">
+    <img class="materials_hero_image" src="./images/bluebad.webp" alt="S logo">
     </div>   
      <div class="line">
         <p> </p>
@@ -91,13 +94,14 @@
     <section class="splide" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
               <ul class="splide__list">
-                  <li class="splide__slide"><img src="./images/sortlogo.png" alt=""></li>
+                  <li class="splide__slide"><img src="./images/cotton_line.webp" alt=""></li>
               </ul>
         </div>
 
       </section>
     <div class="materials_description">
         <h2>Organic Cotton</h2>
+        <br>
         <p>SILFEN made a concious choice to only use either eco-friendly or organic cotton for our bags. This means that there’s no use of the toxic chemicals that are used in conventional cotton production - and therefore no poisoning of the water. 
             Furthermore, studies show, that using organic cotton for your production saves around 1 gallon of water per production compared to traditional cotton production
             
@@ -107,12 +111,13 @@
     <section class="splide2" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
               <ul class="splide__list">
-                <li class="splide__slide"><img src="./images/sortlogo.png" alt=""></li>
+                <li class="splide__slide"><img src="./images/siri_leather.webp" alt=""></li>
               </ul>
         </div>
       </section>
 <div class="materials_description">
     <h2>Leather</h2>
+    <br>
     <p>Some of the SILFEN  bags are made out of leather goods.
 
         All of out leather is made from  bi-products of the food industry. 
@@ -123,12 +128,13 @@
 <section class="splide3" aria-label="Splide Basic HTML Example">
     <div class="splide__track">
           <ul class="splide__list">
-                  <li class="splide__slide"><img src="./images/sortlogo.png" alt=""></li>
+                  <li class="splide__slide"><img src="./images/rPET_pippi.webp" alt=""></li>
           </ul>
     </div>
   </section>
 <div class="materials_description">
     <h2>rPET</h2>
+    <br>
     <p>In 2020 we are expecting to launch a new collection manufactured in rPET, recycled polyethylene terephthalate. 
 
         The material is well known as it is made from water bottles across the world – bottles that often end up discarded in oceans or nature. 
@@ -141,7 +147,42 @@
 </div>
 </div>
 
-        <div class="container">
+
+
+<div id="p">
+    <div class="people_grid">
+        <section class="people_wc">
+            <h2>WORKING CONDITIONS</h2>
+            <p>At SILFEN we believe that it is our job to amplify a healthy and socially responsible conduct within our organization, including all our suppliers. We ensure the ethical development of future generations by guaranteeing that our suppliers do not support or make use of child labor. We encourage our factories to ensure that all families have the possibility to put their children in school.</p>
+            <div class="bar">
+
+            </div>
+        </section>
+        <section class="people_initiatives"> 
+            <div>
+                <h2>INITIATIVES</h2>
+            </div>
+            <div>
+                <h2>1// INSURANCE POLICY</h2>
+                <br>
+                <p>Team Silfen provides insurance to all our hard-working employees as well as their family. Our factories also grant pensions to all employees, providing them with financial stability after retirement.</p>
+            </div>
+            <div>
+                <h2>2// OMNISM</h2>
+                <br>
+                <p>We support the different religions of employees and protect their right to engage with rituals, prayers etc. at any time. We condemn discrimination, and make sure that the employees are protected from prejudice and injustice at the workplace.</p>
+            </div>
+            <div>
+                <h2>3// REGULAR VISITS TO OUR PLANTS TO ENSURE STANDARDS</h2>
+                <br>
+                <p>We visit our manufacturers regularly to ensure that they follow the issued principles regarding working conditions, quality, pollution etc. This allows us to promise our customers that a SILFEN bag is always crafted in a responsible manner.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+        <div class="container" id="s">
             <div id="water">
               <h1 id="shipping-txt">Shipping</h1>
             </div>
@@ -183,7 +224,7 @@
           
 
 
-      <div class="container">
+      <div class="container" id="w">
         <div id="water">
           <h1 id="water-txt">water</h1>
         </div>
@@ -232,6 +273,6 @@
     </main>
     <footer></footer>
   </body>
-
+<script src="nav.js"></script>
   <script src="index.js"></script>
 </html>
