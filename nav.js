@@ -1,17 +1,7 @@
-const btn = document.querySelector(".toggle-btn");
+// BURGER MENU
+const menuIcon = document.querySelector(".hamburger-menu");
+const navbar = document.querySelector(".navbar");
 
-const ul = document.querySelector("nav");
-
-function toggleMenu() {
-  ul.classList.toggle("shown");
-
-  const menu = ul.classList.contains("shown");
-
-  if (menu) {
-    btn.classList.add("open");
-  } else {
-    btn.classList.remove("open");
-  }
-}
-
-btn.addEventListener("click", toggleMenu);
+menuIcon.addEventListener("click", () => {
+  navbar.classList.toggle("change");
+});

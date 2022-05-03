@@ -4,225 +4,351 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/splide-core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-default.min.css"
+    />
     <link rel="stylesheet" href="stylesheet.css" />
     <title>Water Page</title>
   </head>
   <body>
-    <header class="banner">
-            <div class="togglebuttonflex">
-                  <button class="toggle-btn navfont">Menu</button>
-            </div>
-      <div class="bluebanner">
-        <ul>
-          <li>We ship Worldwide</li>
-          <li>Shipping to: Denmark (DKK)</li>
-        </ul>
-      </div>
-      <nav>
-        <ul class="menulink">
-          <li> <a href="">New In</a> </li>
-          <li> <a href="">Shop</a> </li>
-          <li> <a href="">About</a> </li>
-          <li> <a href="">Silfen Play</a> </li>
-          <li> <a href="">Sustainability</a> </li>
-        </ul>
-        <ul class="menulogo">
-          <li>
-            <img
-              class="logo"
-              src="images/SILFEN - LOGO (LILLE)1 (002).png"
-              alt="Logo"
-            />
-          </li>
-        </ul>
-        <ul class="menuicon">
-          <li> <a href=""> <img class="navicon" src="images/user.png" alt="user" /></a></li>
-          <li><a href=""><img class="navicon" src="images/search.png" alt="user" /></a></li>
-          <li><a href=""><img class="navicon" src="images/heart.png" alt="user" /></a></li>
-          <li><a href="">
-            <img class="navicon" src="images/shopping-bag.png" alt="user" /></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <header>
+        <div id="scrollBanner">
+          <div class="bannerFirst">Free shipping in Denmark</div>
+          <div class="shippingBanner"><p>Shipping to: Denmark (DKK)</p></div>
+        </div>
+        <div class="header">
+          <!-- BURGER MENU -->
+          <div class="burgercontainer">
+            <nav class="navbar">
+              <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+              </div>
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Register / Login</a>
+                  <a href="#" class="nav-link"
+                    ><img src="./images/heart.png" alt="heart"
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a href="productlist.html" class="nav-link">New In</a>
+                  <img class="arrow" src="svg/arrow.svg" alt="arrow" />
+                </li>
+                <li class="nav-item">
+                  <a href="productlist.html" class="nav-link">Shop</a>
+                  <img class="arrow" src="svg/arrow.svg" alt="arrow" />
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About</a>
+                  <img class="arrow" src="svg/arrow.svg" alt="arrow" />
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Silfen Play</a>
+                  <img class="arrow" src="svg/arrow.svg" alt="arrow" />
+                </li>
+                <li class="nav-item">
+                  <a href="sustainability.html" class="nav-link"
+                    >Sustainability</a
+                  >
+                  <img class="arrow" src="svg/arrow.svg" alt="arrow" />
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">SS22</a>
+                  <img class="arrow" src="svg/arrow.svg" alt="arrow" />
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- REGULAR MENU -->
+          <nav class="regularmenu">
+            <ul class="navitems">
+              <li><a href="productlist.html">New In</a></li>
+              <li><a href="productlist.html">Shop</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="silfenplay.html">Silfen Play</a></li>
+              <li><a href="sustainability.html">Sustainability</a></li>
+              <li><a href="ss22.html">SS22</a></li>
+            </ul>
+          </nav>
+  
+          <a href="index.html" class="logo"
+            ><img class="logo" src="./images/SILFEN - LOGO (LILLE)1 (002).png" alt="logo"
+          /></a>
+          <section class="icons">
+            <li class="iconx"><img src="./images/user.png" alt="profile" /></li>
+            <li class="icon"><img src="./images/search.png" alt="search" /></li>
+            <li class="iconx"><img src="./images/heart.png" alt="heart" /></li>
+            <li class="icon"><img src="./images/shopping-bag.png" alt="bag" /></li>
+          </section>
+        </div>
+      </header>
 
     <main>
-
-<div class="sustainability_nav">
-    <div class="sustainability_hero"> 
-        <Section>
+      <div class="sustainability_nav">
+        <div class="sustainability_hero">
+          <section>
             <h2>SUSTAINABILITY 2022</h2>
-            <p>As a young, global fashion brand,  we believe it is our duty to take care of the planet, not only for own sake, but for all future generations to come.
-                So far, we’ve launched various initiatives to keep our carbon footprint to an absolute minimum as well as making conscious decisions concerning the social impact on the communities in the countries, in which we operate.
-                You can read about the specific initiatives below:
-                
-                </p>
-        </Section>
-
-    </div>
-    <div class="sustainability_nav_fields">
-        <ul>
+            <p>
+              As a young, global fashion brand, we believe it is our duty to
+              take care of the planet, not only for own sake, but for all future
+              generations to come. So far, we’ve launched various initiatives to
+              keep our carbon footprint to an absolute minimum as well as making
+              conscious decisions concerning the social impact on the
+              communities in the countries, in which we operate. You can read
+              about the specific initiatives below:
+            </p>
+          </section>
+        </div>
+        <div class="sustainability_nav_fields">
+          <ul>
             <li><a href="#m">MATERIALS</a></li>
             <li><a href="#p">PEOPLE</a></li>
             <li><a href="#s">SHIPPING</a></li>
             <li><a href="#w">WATER</a></li>
-        </ul>
-    </div>
-
-</div>
-
-
-    <div class="materials_hero" id="m">
-        <section>
-        <h2 class="materials_h2_faded">I am</h2>
-        <h2 class="materials_h2_bold"> recycled  </h2>
-        <h2 class="materials_h2_outline"> are you?</h2>
-        <h2 class="materials_sub_hero">As a company with great manufacturing activities, we know that we have a responsibility. <br> Our focus is to make as green a production as possible and only using sustainable fabrics for our bags have been a focus of ours. </h2>
-    </section>
-    <img class="materials_hero_image" src="./images/bluebad.webp" alt="S logo">
-    </div>   
-     <div class="line">
-        <p> </p>
-    </div>
-    <section class="materials_intro_section">
-        <h2>Materials</h2>
-        <p>As a company with great manufacturing activities, we know that we have a responsibility. Our focus is to make as green a production as possible and only using sustainable fabrics for our bags have been a focus of ours.   Read below about the different types of fabrics.</p>
-    </section>
-
-    <div class="materials_grid">
-<div class="materials_container">
-    <section class="splide" aria-label="Splide Basic HTML Example">
-        <div class="splide__track">
-              <ul class="splide__list">
-                  <li class="splide__slide"><img src="./images/cotton_line.webp" alt=""></li>
-              </ul>
-        </div>
-
-      </section>
-    <div class="materials_description">
-        <h2>Organic Cotton</h2>
-        <br>
-        <p>SILFEN made a concious choice to only use either eco-friendly or organic cotton for our bags. This means that there’s no use of the toxic chemicals that are used in conventional cotton production - and therefore no poisoning of the water. 
-            Furthermore, studies show, that using organic cotton for your production saves around 1 gallon of water per production compared to traditional cotton production
-            
-            Every nylon product is made from eco-friendly material, meaning that the journey from raw material to SILFEN bag impacts the environment as little as possible.</p>
-    </div>
-
-    <section class="splide2" aria-label="Splide Basic HTML Example">
-        <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide"><img src="./images/siri_leather.webp" alt=""></li>
-              </ul>
-        </div>
-      </section>
-<div class="materials_description">
-    <h2>Leather</h2>
-    <br>
-    <p>Some of the SILFEN  bags are made out of leather goods.
-
-        All of out leather is made from  bi-products of the food industry. 
-        
-        This means  that every part of the animal is utilized in various industries. </p>
-</div>
-
-<section class="splide3" aria-label="Splide Basic HTML Example">
-    <div class="splide__track">
-          <ul class="splide__list">
-                  <li class="splide__slide"><img src="./images/rPET_pippi.webp" alt=""></li>
           </ul>
-    </div>
-  </section>
-<div class="materials_description">
-    <h2>rPET</h2>
-    <br>
-    <p>In 2020 we are expecting to launch a new collection manufactured in rPET, recycled polyethylene terephthalate. 
+        </div>
+      </div>
 
-        The material is well known as it is made from water bottles across the world – bottles that often end up discarded in oceans or nature. 
-        
-        With this new collection, we aim to emphasize the impact of pollution irresponsible wasting. 
-        
-        We wish to pass this awareness to our customers, and to encourage them to help clean our oceans!</p>
-</div>
-
-</div>
-</div>
-
-
-
-<div id="p">
-    <div class="people_grid">
-        <section class="people_wc">
-            <h2>WORKING CONDITIONS</h2>
-            <p>At SILFEN we believe that it is our job to amplify a healthy and socially responsible conduct within our organization, including all our suppliers. We ensure the ethical development of future generations by guaranteeing that our suppliers do not support or make use of child labor. We encourage our factories to ensure that all families have the possibility to put their children in school.</p>
-            <div class="bar">
-
-            </div>
+      <div class="materials_hero" id="m">
+        <section>
+          <h2 class="materials_h2_faded">I am</h2>
+          <h2 class="materials_h2_bold">recycled</h2>
+          <h2 class="materials_h2_outline">are you?</h2>
+          <h2 class="materials_sub_hero">
+            As a company with great manufacturing activities, we know that we
+            have a responsibility. <br />
+            Our focus is to make as green a production as possible and only
+            using sustainable fabrics for our bags have been a focus of ours.
+          </h2>
         </section>
-        <section class="people_initiatives"> 
-            <div>
-                <h2>INITIATIVES</h2>
-            </div>
-            <div>
-                <h2>1// INSURANCE POLICY</h2>
-                <br>
-                <p>Team Silfen provides insurance to all our hard-working employees as well as their family. Our factories also grant pensions to all employees, providing them with financial stability after retirement.</p>
-            </div>
-            <div>
-                <h2>2// OMNISM</h2>
-                <br>
-                <p>We support the different religions of employees and protect their right to engage with rituals, prayers etc. at any time. We condemn discrimination, and make sure that the employees are protected from prejudice and injustice at the workplace.</p>
-            </div>
-            <div>
-                <h2>3// REGULAR VISITS TO OUR PLANTS TO ENSURE STANDARDS</h2>
-                <br>
-                <p>We visit our manufacturers regularly to ensure that they follow the issued principles regarding working conditions, quality, pollution etc. This allows us to promise our customers that a SILFEN bag is always crafted in a responsible manner.</p>
-            </div>
-        </section>
-    </div>
-</div>
+        <img
+          class="materials_hero_image"
+          src="./images/bluebad.webp"
+          alt="S logo"
+        />
+      </div>
+        <p></p>
+      </div>
+      <section class="materials_intro_section">
+        <h2>Materials</h2>
+        <p>
+          As a company with great manufacturing activities, we know that we have
+          a responsibility. Our focus is to make as green a production as
+          possible and only using sustainable fabrics for our bags have been a
+          focus of ours. Read below about the different types of fabrics.
+        </p>
+      </section>
 
-
-        <div class="container" id="s">
-            <div id="water">
-              <h1 id="shipping-txt">Shipping</h1>
+      <div class="materials_grid">
+        <div class="materials_container">
+          <div
+            class="splide"
+            role="group"
+            aria-label="Splide Basic HTML Example"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="./images/cotton_line.webp" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="./images/nylon_bibbi.webp" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="./images/nylon_bibbi2.webp" alt="" />
+                </li>
+              </ul>
             </div>
-            <p id="ship-sub-text">
-                We are aware of the major impact <br> that the shipping industry have on our planet. <br> 
+          </div>
+
+          <div class="materials_description">
+            <h2>ORGANIC COTTON</h2>
+            <br />
+            <p>
+              SILFEN made a concious choice to only use either eco-friendly or
+              organic cotton for our bags. This means that there’s no use of the
+              toxic chemicals that are used in conventional cotton production -
+              and therefore no poisoning of the water. Furthermore, studies
+              show, that using organic cotton for your production saves around 1
+              gallon of water per production compared to traditional cotton
+              production Every nylon product is made from eco-friendly material,
+              meaning that the journey from raw material to SILFEN bag impacts
+              the environment as little as possible.
             </p>
           </div>
-      
-          
-         
-          <div class="initiatives_shipping">
-              <h2>Initiatives</h2> 
-           <div class="initiatives_shipping_grid">
-            
-               <div class="initiatives_shipping_image">
-              <img
-                class="initiatives_s_image"
-                src="./images/sortlogo.png"
-                alt="S-logo"
-              />
+
+          <div
+            class="splide2"
+            role="group"
+            aria-label="Splide Basic HTML Example"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="./images/siri_leather.webp" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="./images/sally_leather.webp" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="./images/Ulrikke_leather.webp" alt="" />
+                </li>
+              </ul>
             </div>
-             <div class="initiatives_shipping_text">
-              <section>
-             
-               <h3>1// JOINING FORCES</h3>
-                 <br />
-                  <p>
-                    We are in close contact with other brands in our aim to minimize shipping as much as possible – by joining forces
-              </p></section>
-              <section>
-               <h3>2// SHIPPING IN BULKS</h3>  <br/>  <p>
-                We strive to ship as much as possible in bulk – mostly by sea or train. 
-                These are the most environmentally friendly modes of shipping, reducing polluting emissions.
+          </div>
+
+          <div class="materials_description">
+            <h2>LEATHER</h2>
+            <br />
+            <p>
+              Some of the SILFEN bags are made out of leather goods. All of out
+              leather is made from bi-products of the food industry. This means
+              that every part of the animal is utilized in various industries.
+            </p>
+          </div>
+
+          <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="./images/rPET_pippi.webp" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="./images/rPET_tits.webp" alt="" />
+                </li>
+                <li class="splide__slide">
+                  <img src="./images/puddle_rPET.webp" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="materials_description">
+            <h2>rPET</h2>
+            <br />
+            <p>
+              In 2020 we are expecting to launch a new collection manufactured
+              in rPET, recycled polyethylene terephthalate. The material is well
+              known as it is made from water bottles across the world – bottles
+              that often end up discarded in oceans or nature. With this new
+              collection, we aim to emphasize the impact of pollution
+              irresponsible wasting. We wish to pass this awareness to our
+              customers, and to encourage them to help clean our oceans!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="p">
+        <div class="people_grid">
+          <section class="people_wc">
+            <h2>WORKING CONDITIONS</h2>
+            <p>
+              At SILFEN we believe that it is our job to amplify a healthy and
+              socially responsible conduct within our organization, including
+              all our suppliers. We ensure the ethical development of future
+              generations by guaranteeing that our suppliers do not support or
+              make use of child labor. We encourage our factories to ensure that
+              all families have the possibility to put their children in school.
+            </p>
+            <div class="bar"></div>
+          </section>
+          <section class="people_initiatives">
+            <div>
+              <h2>INITIATIVES</h2>
+            </div>
+            <div>
+              <h2>1// INSURANCE POLICY</h2>
+              <br />
+              <p>
+                Team Silfen provides insurance to all our hard-working employees
+                as well as their family. Our factories also grant pensions to
+                all employees, providing them with financial stability after
+                retirement.
+              </p>
+            </div>
+            <div>
+              <h2>2// OMNISM</h2>
+              <br />
+              <p>
+                We support the different religions of employees and protect
+                their right to engage with rituals, prayers etc. at any time. We
+                condemn discrimination, and make sure that the employees are
+                protected from prejudice and injustice at the workplace.
+              </p>
+            </div>
+            <div>
+              <h2>3// REGULAR VISITS TO OUR PLANTS TO ENSURE STANDARDS</h2>
+              <br />
+              <p>
+                We visit our manufacturers regularly to ensure that they follow
+                the issued principles regarding working conditions, quality,
+                pollution etc. This allows us to promise our customers that a
+                SILFEN bag is always crafted in a responsible manner.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="inline-block_group">
+        <h1 class="hero-tagline">all of our manufacturers are</h1>
+        <ul class="word-slider">
+          <li>visited regularly</li>
+          <li>SA8000 certified.</li>
+          <li>does not make use of child labour</li>
+          <li>grant pansion to all employees</li>
+        </ul>
+      </div>
+
+      <div class="container" id="s">
+        <div id="water">
+          <h1 id="shipping-txt">Shipping</h1>
+        </div>
+        <p id="ship-sub-text">
+          We are aware of the major impact <br />
+          that the shipping industry have on our planet. <br />
+        </p>
+      </div>
+
+      <div class="initiatives_shipping">
+        <h2>Initiatives</h2>
+        <div class="initiatives_shipping_grid">
+          <div class="initiatives_shipping_image">
+            <img
+              class="initiatives_s_image"
+              src="./images/sortlogo.png"
+              alt="S-logo"
+            />
+          </div>
+          <div class="initiatives_shipping_text">
+            <section>
+              <h3>1// JOINING FORCES</h3>
+              <br />
+              <p>
+                We are in close contact with other brands in our aim to minimize
+                shipping as much as possible – by joining forces
               </p>
             </section>
-            </div>
+            <section>
+              <h3>2// SHIPPING IN BULKS</h3>
+              <br />
+              <p>
+                We strive to ship as much as possible in bulk – mostly by sea or
+                train. These are the most environmentally friendly modes of
+                shipping, reducing polluting emissions.
+              </p>
+            </section>
+          </div>
         </div>
-       </div>
-          
-
+      </div>
 
       <div class="container" id="w">
         <div id="water">
@@ -238,46 +364,41 @@
         <div class="initiatives_water_text">
           <h2>INITIATIVES</h2>
           <section>
-         
-           <h3> 1// Organic Cotton.</h3> <br /> <p>
-            SILFEN made a concious choice to only use either eco-friendly or
-            organic cotton for our bags. This means that there’s no use of the
-            toxic chemicals that are used in conventional cotton production -
-            and therefore no poisoning of the water. Furthermore, studies show,
-            that using organic cotton for your production saves around 1 gallon
-            of water per production compared to traditional cotton production.
-          </p></section>
+            <h3>1// ORGANIC COTTON.</h3>
+            <br />
+            <p>
+              SILFEN made a concious choice to only use either eco-friendly or
+              organic cotton for our bags. This means that there’s no use of the
+              toxic chemicals that are used in conventional cotton production -
+              and therefore no poisoning of the water. Furthermore, studies
+              show, that using organic cotton for your production saves around 1
+              gallon of water per production compared to traditional cotton
+              production.
+            </p>
+          </section>
           <section>
-           <h3>2// Save the oceans from more plastic pollution.</h3>  <br/>  <p>
-            In 2020 we will introduce a new collection of bags made from a new
-            material; rPET or Recycled Polyethylene Terephthalate. This recycled
-            material is primarily made from plastic waste collected from the
-            oceans, or from recycled plastic bottles gathered from all over the
-            world.
-          </p>
-        </section>
+            <h3>2// SAVE THE OCEANS FROM MORE PLASTIC POLLUTION.</h3>
+            <br />
+            <p>
+              In 2020 we will introduce a new collection of bags made from a new
+              material; rPET or Recycled Polyethylene Terephthalate. This
+              recycled material is primarily made from plastic waste collected
+              from the oceans, or from recycled plastic bottles gathered from
+              all over the world.
+            </p>
+          </section>
         </div>
         <div class="initiatives_water_image">
           <img
             class="initiatives_w_image"
-            src="./images/sortlogo.png"
+            src="./images/water.jpg"
             alt="S-logo"
           />
         </div>
       </div>
-
-
-
-
-
     </main>
     <footer></footer>
   </body>
-<script src="nav.js"></script>
-
+  <script src="nav.js"></script>
   <script src="index.js"></script>
 </html>
-
-
-
-  
